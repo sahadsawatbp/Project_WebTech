@@ -1,0 +1,34 @@
+@font-face {font-family: "Sofia Pro Black"; src: url("//db.onlinewebfonts.com/t/1572b251b0319fdd12219a000aad6196.eot"); src: url("//db.onlinewebfonts.com/t/1572b251b0319fdd12219a000aad6196.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/1572b251b0319fdd12219a000aad6196.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/1572b251b0319fdd12219a000aad6196.woff") format("woff"), url("//db.onlinewebfonts.com/t/1572b251b0319fdd12219a000aad6196.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/1572b251b0319fdd12219a000aad6196.svg#Sofia Pro Black") format("svg"); }
+
+.body{
+    margin: 0;
+    
+}
+.navbar{
+    font-family: "Sofia Pro Black", Helvetica Neue, Helvetica, Arial, sans-serif ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    text-transform:uppercase;
+    background-color: #0065c3 ;
+    padding: 10px;
+    color: white;
+}
+.navbar-left{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.navbar-item{
+    margin-left: 20px;
+    cursor: pointer;
+}
+.navbar-right .navbar-item{
+    border-radius: 30px;
+    border: 2px solid white;
+    padding: 5px 25px;
+
+}
