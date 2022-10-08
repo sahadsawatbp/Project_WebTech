@@ -2,6 +2,7 @@ import Navbar from './navbar';
 import React from 'react';
 import Nitro from './nitro';
 import './homePage.css'
+import Myparallax from './parallax.js';
 
 function Homepage () {
     return (
@@ -13,6 +14,7 @@ function Homepage () {
                 <div className='product-cherry'></div>
             </section>
             <Nitro></Nitro>
+           <Myparallax></Myparallax>
         </div>
     )
 }
