@@ -2,9 +2,10 @@ import Navbar from './navbar';
 import React from 'react';
 import Nitro from './nitro';
 import './homePage.css'
-import Myparallax from './parallax.js';
-
+import Pourstep from './pourstep.tsx';
+import Mirinda from './mirinda';
 function Homepage () {
+
     return (
         <div>
             <Navbar></Navbar>
@@ -14,7 +15,8 @@ function Homepage () {
                 <div className='product-cherry'></div>
             </section>
             <Nitro></Nitro>
-           <Myparallax></Myparallax>
+            <Pourstep></Pourstep>
+            <Mirinda></Mirinda>
         </div>
     )
 }

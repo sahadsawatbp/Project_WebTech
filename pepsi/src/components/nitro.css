@@ -29,6 +29,7 @@
     font-size: 23px;
 }
 .container-button{
+    cursor: pointer;
     color: white;
     border: 3px solid white;
     border-radius: 30px;

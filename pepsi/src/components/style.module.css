@@ -1,0 +1,49 @@
+@font-face {font-family: "Sofia Pro Black"; src: url("//db.onlinewebfonts.com/t/1572b251b0319fdd12219a000aad6196.eot"); src: url("//db.onlinewebfonts.com/t/1572b251b0319fdd12219a000aad6196.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/1572b251b0319fdd12219a000aad6196.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/1572b251b0319fdd12219a000aad6196.woff") format("woff"), url("//db.onlinewebfonts.com/t/1572b251b0319fdd12219a000aad6196.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/1572b251b0319fdd12219a000aad6196.svg#Sofia Pro Black") format("svg"); }
+
+.main {
+  transform: translateX(150px);
+  transition-duration: 60ms;
+  min-width: 800px;
+  padding: 0 50px;
+  height: 500px;
+  margin-left: 50px;
+}
+.main img{
+  width: 600px;
+}
+
+.transitionsItem {
+  overflow: hidden;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 6.5em;
+  font-weight: 800;
+  text-transform: uppercase;
+  will-change: transform, opacity, height;
+  white-space: nowrap;
+  cursor: pointer;
+  line-height: 60px;
+}
+
+
+.container{
+  padding-top: 50px;
+  background-color: black;
+  font-family: "Sofia Pro Black", Helvetica Neue, Helvetica, Arial, sans-serif ;
+  display: flex;
+  align-items: center;
+  height: 650px;
+  justify-items:center;
+ 
+}
+.fanta{
+  margin-right: 50px;
+  margin-left: 120px;
+  padding: 0;
+
+}
+.fanta img{
+  min-width: 400px;
+}
