@@ -3,7 +3,8 @@ import React from 'react';
 import Nitro from './nitro';
 import './homePage.css'
 import Pourstep from './pourstep.tsx';
-import Mirinda from './mirinda';
+import SectionVideo from './video';
+import SectionCoke from './coke';
 function Homepage () {
 
     return (
@@ -16,7 +17,9 @@ function Homepage () {
             </section>
             <Nitro></Nitro>
             <Pourstep></Pourstep>
-            <Mirinda></Mirinda>
+            <SectionVideo></SectionVideo>
+            <SectionCoke></SectionCoke>
+
         </div>
     )
 }

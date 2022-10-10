@@ -29,7 +29,7 @@ const  Pourstep = () =>{
     ref.current = []
     set([])
     ref.current.push(setTimeout(() => set(['Pepsi', 'Zero', 'Sugar']), 2000))
-    ref.current.push(setTimeout(() => set(['Zero Sugar', ' Compromise']), 5000))
+    ref.current.push(setTimeout(() => set(['Zero Sugar', ' Compromise']), 4500))
 
   }, [])
 
