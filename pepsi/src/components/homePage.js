@@ -5,6 +5,7 @@ import './homePage.css'
 import Pourstep from './pourstep.tsx';
 import SectionVideo from './video';
 import SectionCoke from './coke';
+import Schwepp from './schwepp';
 function Homepage () {
 
     return (
@@ -16,9 +17,10 @@ function Homepage () {
                 <div className='product-cherry'></div>
             </section>
             <Nitro></Nitro>
-            <Pourstep></Pourstep>
-            <SectionVideo></SectionVideo>
+            <Schwepp></Schwepp>
             <SectionCoke></SectionCoke>
+            <SectionVideo></SectionVideo>
+            <Pourstep></Pourstep>
 
         </div>
     )
