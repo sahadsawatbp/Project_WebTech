@@ -21,7 +21,7 @@ section{
 
 }
 .product-section{
-    background-image: url("./assets/homePage/background-desktop-section.png");
+    background-image: url("../assets/homePage/background-desktop-section.png");
     background-size: auto 100%;
     background-repeat: no-repeat;
     background-position: top center;
@@ -39,10 +39,10 @@ section{
     box-sizing: border-box;
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url("./assets/homePage/pepsi-pepsi-cola-logo-desktop.png");
+    background-image: url("../assets/homePage/pepsi-pepsi-cola-logo-desktop.png");
 }
 .product-soda{
-    background-image: url("./assets//homePage/cream-soda.png");
+    background-image: url("../assets//homePage/cream-soda.png");
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
@@ -53,7 +53,7 @@ section{
     bottom:  14.1px;
 }
 .product-cherry{
-    background-image: url("./assets//homePage/black-cherry.png");
+    background-image: url("../assets//homePage/black-cherry.png");
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;

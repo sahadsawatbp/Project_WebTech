@@ -6,6 +6,7 @@ import Pourstep from './pourstep.tsx';
 import SectionVideo from './video';
 import SectionCoke from './coke';
 import Schwepp from './schwepp';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 function Homepage () {
 
     return (

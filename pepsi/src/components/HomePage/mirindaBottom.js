@@ -1,7 +1,7 @@
 import './mirindaBottom.css'
-import mirindaOrange from './assets/homePage/mirinda-orange.png'
-import mirindagreen from './assets/homePage/mirinda-green.png'
-import mirindapurple from './assets/homePage/Mirinda-Cream-Soda-Blueberry-removebg-preview.png'
+import mirindaOrange from '../assets/homePage/mirinda-orange.png'
+import mirindagreen from '../assets/homePage/mirinda-green.png'
+import mirindapurple from '../assets/homePage/Mirinda-Cream-Soda-Blueberry-removebg-preview.png'
 const MirindaBottom = ()=>{
     return(
         <section className='mirinda-bottom'>

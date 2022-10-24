@@ -1,4 +1,4 @@
-import video from './assets/video/videoplayback_1.mp4'
+import video from '../assets/video/videoplayback_1.mp4'
 
 const SectionVideo = () =>{
     return (

@@ -1,4 +1,4 @@
-import fanta from './assets/homePage/hero-wtfanta.png'
+import fanta from '../assets/homePage/hero-wtfanta.png'
 import './fanta.css'
 const Fanta = ()=>{
     return (

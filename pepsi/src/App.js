@@ -1,11 +1,15 @@
 
-import Homepage from './components/homePage';
+import Homepage from './components/HomePage/homePage';
 import React from 'react';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import PurchesPage from './components/purchase/purchase';
 function App() {
   return (
-      <div>
-        <Homepage></Homepage>
-      </div>
+
+        <Routes>
+          <Route path="/" element={<Homepage></Homepage>}></Route>
+          <Route path="/purches" element={<PurchesPage></PurchesPage>}></Route>
+        </Routes>
   );
 }
 

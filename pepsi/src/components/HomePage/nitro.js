@@ -1,6 +1,6 @@
 import './nitro.css'
-import nitroimg from './assets/homePage/nitro.png'
-import nitrologo from './assets/homePage/Nitro_Logo.png'
+import nitroimg from '../assets/homePage/nitro.png'
+import nitrologo from '../assets/homePage/Nitro_Logo.png'
 const Nitro = ()=>{
     return(
         <div className='container'>

@@ -1,4 +1,4 @@
-import cokeimg from './assets/homePage/Coke_Custom_Bottles.png'
+import cokeimg from '../assets/homePage/Coke_Custom_Bottles.png'
 import './coke.css'
 const SectionCoke = ()=>{
     return (

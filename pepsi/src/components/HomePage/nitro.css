@@ -5,7 +5,7 @@
     gap: 0;
     font-family: "Sofia Pro Black", Helvetica Neue, Helvetica, Arial, sans-serif ;
     display: flex;
-    background-image: url("./assets/homePage/Desktop_Background.png");
+    background-image: url("../assets/homePage/Desktop_Background.png");
     width: 100%;
     background-position: 50% center;
     justify-content: space-evenly;

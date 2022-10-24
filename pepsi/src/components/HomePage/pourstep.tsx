@@ -1,7 +1,7 @@
 import React, { useState, useCallback, useRef, useEffect } from 'react'
 import { useTransition, animated } from '@react-spring/web'
 import styles from './style.module.css'
-import wtfanta from './assets/homePage/can-pzs.png'
+import wtfanta from '../assets/homePage/can-pzs.png'
 
 const  Pourstep = () =>{
   const ref = useRef<ReturnType<typeof setTimeout>[]>([])
