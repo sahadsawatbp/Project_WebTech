@@ -89,7 +89,7 @@ const FilterCanvas = (props)=>{
                                         }}>Delete</button>
                                     </div>
                                 </div>
-                            </div>q
+                            </div>
                         </div>
                         ))}
                         </Offcanvas.Body>
