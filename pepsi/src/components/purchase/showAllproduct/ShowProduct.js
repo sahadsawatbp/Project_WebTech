@@ -36,7 +36,7 @@ const ShowProduct = (props)=>{
         setCountItems(countItems - 1)
         setNewItem(preitem  =>{
             if(preitem.find(item =>item.id === data.id)?.count ===1){
-            return preitem.filter(item => item.id != data.id)
+            return preitem.filter(item => item.id !== data.id)
             }else{
                 return preitem.map(item =>{
                     if(item.id === data.id){

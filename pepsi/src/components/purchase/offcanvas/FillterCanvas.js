@@ -31,8 +31,7 @@ const FilterCanvas = (props)=>{
             setShowCount(true)
         }
         setCount(sum)
-    })
-    console.log(count)
+    })  
     return(
         <>
         <Button
