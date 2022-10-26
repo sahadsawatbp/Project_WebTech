@@ -12,9 +12,9 @@ const ShowProduct = (props)=>{
     const getDeleteData = (data)=>{
         DeleteData(data)
     } 
+
     const [NewItems, setNewItem ] = useState([])
     const [countItems, setCountItems] = useState(0)
-
     const getFinalData = (event) =>{
         setCountItems(countItems + event.count)
         setNewItem(preitem  =>{
@@ -48,15 +48,27 @@ const ShowProduct = (props)=>{
             }
         })
     }
+    const [useItems, setUseItem ] = useState([])
     useEffect(() => {
-        if(NewItems.length>0){
-            console.log("test")
+        if(NewItems.length>=1){
             localStorage.setItem('items', JSON.stringify(NewItems));
+        }else{
+            localStorage.setItem('items',JSON.stringify(''));
         }
-    }, [NewItems]);
-    const getData = (data)=>{
-        console.log(data)
-    }
+    }, [NewItems]); 
+    useEffect(() => {
+        const items = JSON.parse(localStorage.getItem('items'));
+        if (items) {
+         setUseItem(items);
+        }
+      }, []);
+
+ 
+    // useEffect(()=>{
+    //     const items = JSON.parse(localStorage.getItem('items'))
+    //     setUseItem(items)
+    // })
+    // console.log(useItems)
     return (
         <div className="showProduct">
             <div className='top'>
