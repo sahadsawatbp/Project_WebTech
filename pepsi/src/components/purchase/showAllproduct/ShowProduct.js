@@ -2,9 +2,13 @@ import './ShowProduct.css'
 import MyOffcanvas from '../offcanvas/Offcanvas'
 import Product from './Product'
 import { useState } from 'react'
-
+import BoxFilterItem from '../filterItem/BoxFilterItem'
 
 const ShowProduct = (props)=>{
+
+    const getSearchText = (data) =>{
+        props.getText(data)
+    }
     const getDeleteData = (data)=>{
         DeleteData(data)
     } 
@@ -46,9 +50,12 @@ const ShowProduct = (props)=>{
     }
     return (
         <div className="showProduct">
-            <MyOffcanvas newData ={NewItems}  getDelData={getDeleteData}></MyOffcanvas>
+            <div className='top'>
+                <MyOffcanvas newData ={NewItems}  getDelData={getDeleteData}></MyOffcanvas>
+                <BoxFilterItem getText={getSearchText}></BoxFilterItem>
+             </div>
             <Product items ={props.data} getFinalData={getFinalData}  ></Product>
-    </div>
+       </div>
     )
 }
 export default ShowProduct

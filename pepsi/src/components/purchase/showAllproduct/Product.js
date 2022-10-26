@@ -3,6 +3,8 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import ListProduct from "./ListProduct";
 import CardProduct from "./CardProduct";
+import MyOffcanvas from "../offcanvas/Offcanvas";
+import { useState } from "react";
 const Product = (props)=>{
 
 
@@ -12,9 +14,13 @@ const Product = (props)=>{
         }
        props.getFinalData(enterData)
     }
+    // const [isHaveData, setIsHaveData] = useState(true)
+    // if(props.items.length>0){
+    //     setIsHaveData(true)
+    // }
     return (
         <Container
-            style={{paddingLeft: '3vw'}}
+            style={{paddingLeft: '3vw', backgroundColor: 'black'}}
         >
              <Row >
                 <Col sm={3}>

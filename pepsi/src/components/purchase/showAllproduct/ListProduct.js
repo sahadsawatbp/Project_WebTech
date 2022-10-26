@@ -8,9 +8,7 @@ const ListProduct = ()=>{
             <ListGroup>
                 <ListGroup.Item
                     as="li"
-                    className="d-flex justify-content-between align-items-start"
-                >
-                    
+                    className="d-flex justify-content-between align-items-start">
                     <div className="ms-2 me-auto">
                         <div    className="fw-bold">Pepsi</div>
                     </div>

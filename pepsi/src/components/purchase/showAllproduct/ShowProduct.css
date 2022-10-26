@@ -1,4 +1,16 @@
 .showProduct{
-    background-color: white;
+    padding-top:  10vw;
+    background-color: black;
     border: 1px solid black;
+}
+.top{
+    align-items: center;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    margin-bottom: 5vw;
+    background-color: white;
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    border-radius: 20px;
 }

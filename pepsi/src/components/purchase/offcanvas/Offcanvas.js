@@ -9,7 +9,8 @@ const MyOffcanvas = (props)=>{
     }
     return(
         <div className='box-profiles'>
-            <div className='text-box'></div>
+            <div className='text-box'>
+            </div>
             <FilterCanvas newDataAdd={props.newData} reciveData={reciveData} ></FilterCanvas>
         </div>
     )

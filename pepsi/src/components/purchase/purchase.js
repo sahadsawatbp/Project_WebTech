@@ -1,6 +1,9 @@
 import ShowProduct from './showAllproduct/ShowProduct'
 import './purchase.css'
 import Navbar from '../HomePage/navbar'
+import FilterCanvas from './offcanvas/FillterCanvas'
+import { useState, useEffect } from 'react'
+import FormText from 'react-bootstrap/esm/FormText'
 const PurchesPage = ()=>{
     const DummyProduct = [
         {   
@@ -50,10 +53,22 @@ const PurchesPage = ()=>{
         },
     
     ]
+    const [fileredItem, setFileredItem] =useState(DummyProduct)
+    const getData = (data)=>{
+        const BigData = data.toUpperCase()
+        const FilteredItem = DummyProduct.filter((dummy)=>{
+            return dummy.name.includes(BigData)
+        })
+        setFileredItem(FilteredItem)
+    }
+    console.log(fileredItem)
+    // const Fil    terItem = DummyProduct.filter((dummy)=>{
+    //     return dummy.name.includes(data.toUpperCase())
+    // })
     return (
         <div className="body-mainpage">
             <Navbar></Navbar>
-            <ShowProduct data={DummyProduct}></ShowProduct>
+            <ShowProduct data={fileredItem} getText={getData}></ShowProduct>
         </div>
     )
 }
