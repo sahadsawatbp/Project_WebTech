@@ -7,9 +7,13 @@ const FilterCanvas = (props)=>{
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+
     const newData =(data)=>{
         props.reciveData(data)
     
+    }
+    const delData = (data)=>{
+        props.addData(data)
     }
     let  arCount = []
     let  arrCount = []
@@ -32,6 +36,9 @@ const FilterCanvas = (props)=>{
         }
         setCount(sum)
     })  
+
+
+    
     return(
         <>
         <Button
@@ -83,9 +90,12 @@ const FilterCanvas = (props)=>{
                                         <h5>{data.name}</h5>
                                         <p>{data.price} Bath</p>
                                         <p>จำนวน {data.count}</p>
-                                        <button className='btn bg-primary' onClick={()=>{
+                                        <button className='btn bg-primary'  style={{marginLeft:'1vw', color:'white'}}onClick={()=>{
                                                newData(data)
                                         }}>Delete</button>
+                                        <button className='btn bg-primary' style={{marginLeft:'1vw', color:'white'}} onClick={()=>{
+                                                delData(data)
+                                        }}> add</button>
                                     </div>
                                 </div>
                             </div>

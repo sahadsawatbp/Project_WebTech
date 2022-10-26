@@ -1,7 +1,7 @@
 import './ShowProduct.css'
 import MyOffcanvas from '../offcanvas/Offcanvas'
 import Product from './Product'
-import { useState } from 'react'
+import { useState , useEffect} from 'react'
 import BoxFilterItem from '../filterItem/BoxFilterItem'
 
 const ShowProduct = (props)=>{
@@ -48,10 +48,19 @@ const ShowProduct = (props)=>{
             }
         })
     }
+    useEffect(() => {
+        if(NewItems.length>0){
+            console.log("test")
+            localStorage.setItem('items', JSON.stringify(NewItems));
+        }
+    }, [NewItems]);
+    const getData = (data)=>{
+        console.log(data)
+    }
     return (
         <div className="showProduct">
             <div className='top'>
-                <MyOffcanvas newData ={NewItems}  getDelData={getDeleteData}></MyOffcanvas>
+                <MyOffcanvas newData ={NewItems}  getDelData={getDeleteData} getAddData={getFinalData}></MyOffcanvas>
                 <BoxFilterItem getText={getSearchText}></BoxFilterItem>
              </div>
             <Product items ={props.data} getFinalData={getFinalData}  ></Product>
