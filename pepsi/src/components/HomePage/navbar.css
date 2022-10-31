@@ -7,6 +7,7 @@
 .navbar{
     width: 100%;
     position: fixed;
+    top:0;
     font-family: "Sofia Pro Black", Helvetica Neue, Helvetica, Arial, sans-serif ;
     display: flex;
     align-items: center;

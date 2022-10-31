@@ -4,14 +4,16 @@ import Navbar from "../HomePage/navbar";
 import { Link } from "react-router-dom";
 import "./ProductPage.css"
 
-function ProductPage(){
+const ProductPage = () =>{
   return (
+    <div><Navbar></Navbar>
       <div className="product-container">
         {products.map((element)=>{
           return <Product name={element.name} img_product={element.img_product} background_color={element.background_color} key={element.id}/>
         })}
       </div>
-  );
+    </div>
+  )
 }
 
 export default ProductPage;
