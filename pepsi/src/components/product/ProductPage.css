@@ -17,7 +17,7 @@ body{
 }
 .product-navbar .navbar{
   background-color: white;
-  color:black;
+  color:rgb(102, 102, 102);
 }
 .product-navbar .navbar a{
   color:#0065c3 ;
