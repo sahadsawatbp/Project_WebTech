@@ -1,22 +1,20 @@
 *{
     box-sizing: border-box;
   }
-  body{
-    background: white;
-    min-height: 100vh;
-    width: 100%;
-    margin:0;
-    font-family: "Sofia Pro Black", Helvetica Neue, Helvetica, Arial, sans-serif ;
-  }
-  .product-container{
-    text-align: center;
-    margin-top: 10vw;
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 100%;
-  }
-
-
+body{
+  background: white;
+  min-height: 100vh;
+  width: 100%;
+  margin:0;
+  font-family: "Sofia Pro Black", Helvetica Neue, Helvetica, Arial, sans-serif ;
+}
+.product-container{
+  text-align: center;
+  margin-top: 10vw;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
 .product-navbar .navbar{
   background-color: white;
   color:black;
@@ -24,7 +22,10 @@
 .product-navbar .navbar a{
   color:#0065c3 ;
 }
-
+.product-navbar .navbar-right .navbar-item{
+  border: 2px solid #0065c3;
+}
 .product-navbar .navbar a:hover{
   color:#6ca7df ;
 }
+

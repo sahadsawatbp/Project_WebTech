@@ -6,11 +6,13 @@ import "./ProductPage.css"
 const ProductPage = () =>{
   return (
     <div className="product-navbar"><Navbar />
-      <div className="product-container">
-        {products.map((element)=>{
-          return <Product name={element.name} img_product={element.img_product} background_color={element.background_color} id = {element.id} key={element.id}/>
-        })}
-      </div>
+      
+        <div className="product-container">
+          {products.map((element)=>{
+            return <Product name={element.name} img_product={element.img_product} background_color={element.background_color} id = {element.id} key={element.id}/>
+          })}
+        </div>
+      
     </div>
   )
 }
