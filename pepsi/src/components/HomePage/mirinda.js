@@ -8,8 +8,8 @@ const Mirinda = () =>{
             <div className="video">
                 <video  src={video} controls></video>
             </div>
-            <MirindaBottom></MirindaBottom>
-            <Fanta></Fanta>
+            <MirindaBottom/>
+            <Fanta/>
         </div>
     )
 }

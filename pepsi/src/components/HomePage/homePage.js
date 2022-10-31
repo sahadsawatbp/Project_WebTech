@@ -11,17 +11,19 @@ function Homepage () {
 
     return (
         <div>
-            <Navbar></Navbar>
+            <Navbar/>
             <section className='product-section'>
                 <div className='product-promot'></div>
                 <div className='product-soda'></div>
                 <div className='product-cherry'></div>
             </section>
-            <Nitro></Nitro>
-            <Schwepp></Schwepp>
-            <SectionCoke></SectionCoke>
-            <SectionVideo></SectionVideo>
-            <Pourstep></Pourstep>
+            <section>
+                <Nitro/>
+            </section>
+            <Schwepp/>
+            <SectionCoke/>
+            <SectionVideo/>
+            <Pourstep/>
 
         </div>
     )
