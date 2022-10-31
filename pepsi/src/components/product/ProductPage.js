@@ -9,7 +9,7 @@ const ProductPage = () =>{
       
         <div className="product-container">
           {products.map((element)=>{
-            return <Product name={element.name} img_product={element.img_product} background_color={element.background_color} id = {element.id} key={element.id}/>
+            return <Product name={element.name} img_product={element.img_product} background_color={element.background_color} id={element.id} page={element.page} key={element.id}/>
           })}
         </div>
       
