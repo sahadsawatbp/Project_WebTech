@@ -21,6 +21,7 @@
     transform: translateY(-90%);
 }
 .product-item{
+    text-decoration: none;
     text-align: center;
     min-width:25%;
     height:16.66667vw;
@@ -46,7 +47,7 @@
 }
 @keyframes bg{
     0%{height: 0%;}
-    100%{height: 180%;}
+    100%{height: 200%;}
 }
 .product-item:hover img{
     transform: scale(1.05);
