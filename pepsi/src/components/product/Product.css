@@ -2,6 +2,7 @@
     color:black;
     font-size: .6vw;
     padding: 10px;
+    animation: transitionIn;
 }
 #tooltip{
     position: absolute;
@@ -32,7 +33,6 @@
     cursor: pointer;
     position: relative;
 }
-
 .background-color{
     position: absolute;
     width: 100%;
@@ -61,4 +61,9 @@
     bottom: -30%;
     z-index: -1;
     transition: .5s;
+    animation: transitionIn;
+}
+@keyframes transitionIn{
+    0%{opacity: 0;transform: translateY(40px);}
+    100%{opacity: 1;transform: translateY(0);}
 }

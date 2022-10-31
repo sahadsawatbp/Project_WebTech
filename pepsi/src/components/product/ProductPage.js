@@ -8,7 +8,7 @@ const ProductPage = () =>{
     <div className="product-navbar"><Navbar />
       <div className="product-container">
         {products.map((element)=>{
-          return <Product name={element.name} img_product={element.img_product} background_color={element.background_color} key={element.id}/>
+          return <Product name={element.name} img_product={element.img_product} background_color={element.background_color} id = {element.id} key={element.id}/>
         })}
       </div>
     </div>
