@@ -10,7 +10,7 @@ const Navbar = () =>{
                         <img src={pepsiLogo}/>
                     </div>
                 </Link>
-                <div className='navbar-item' style={{"padding-left":'40px'}} >view product</div>
+                <Link to="/product"><a><div className='navbar-item' style={{"padding-left":'40px'}} >view product</div></a></Link>
                 <div className='navbar-item'>what's new</div>
                 <div className='navbar-item'>newsletter</div>
                 <div className='navbar-item'>contact us</div>
