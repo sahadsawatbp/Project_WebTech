@@ -1,7 +1,7 @@
 import ProductPage from './components/product/ProductPage'
 import Homepage from './components/HomePage/homePage';
 import React from 'react';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {Routes, Route } from "react-router-dom";
 import PurchesPage from './components/purchase/purchase';
 function App() {
   return (

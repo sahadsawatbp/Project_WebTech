@@ -1,7 +1,6 @@
 import Product from "./Product"
 import products from "./products.json"
 import Navbar from "../HomePage/navbar";
-import { Link } from "react-router-dom";
 import "./ProductPage.css"
 
 const ProductPage = () =>{
