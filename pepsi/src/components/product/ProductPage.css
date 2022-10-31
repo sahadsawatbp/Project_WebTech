@@ -9,9 +9,21 @@
     font-family: "Sofia Pro Black", Helvetica Neue, Helvetica, Arial, sans-serif ;
   }
   .product-container{
+    text-align: center;
     margin-top: 10vw;
     display: flex;
     flex-wrap: wrap;
     max-width: 100%;
+  }
+  .product-navbar .navbar{
+    background-color: white;
+    color:black;
+  }
+  .product-navbar .navbar a{
+    color:#0065c3 ;
+  }
+
+  .product-navbar .navbar a:hover{
+    color:#6ca7df ;
   }
   
