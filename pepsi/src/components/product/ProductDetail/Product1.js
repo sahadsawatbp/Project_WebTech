@@ -27,9 +27,9 @@ const Product1 = () =>{
                             <p style={{borderBottom:"5px solid black"}}>Protein {Item[0].nutrition_facts.daily_value.protein}</p>
                             <p>Not a significant source of other nutrients.</p>
                             <p>*Percent Daily Values are based on a 2,000 calorie diet.</p>
-                            <div className="navbar-right">
+                        </div>
+                        <div className="navbar-right">
                                 <Link to="/purches"><div className='navbar-item'>Buy now</div></Link>
-                            </div>
                         </div>
                     </div>
                     <img src={`../${Item[0].img_product}`} alt=""/>
