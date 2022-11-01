@@ -4,6 +4,7 @@ import React from 'react';
 import {Routes, Route} from "react-router-dom";
 import PurchesPage from './components/purchase/purchase';
 import Product1 from './components/product/ProductDetail/Product1';
+import Product2 from './components/product/ProductDetail/Product2';
 function App() {
   return (
       
@@ -12,7 +13,7 @@ function App() {
           <Route path="/purches" element={<PurchesPage/>}></Route>
           <Route path="/product" element={<ProductPage/>}></Route>
           <Route path="/product/product_1" element={<Product1/>}></Route>
-          
+          <Route path="/product/product_2" element={<Product2/>}></Route>
         </Routes>
       
   );

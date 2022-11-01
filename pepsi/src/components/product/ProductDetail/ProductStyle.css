@@ -1,5 +1,6 @@
 .detail-body{
     height: 100%;
+    
 }
 .detail-container{
     display: flex;
@@ -7,24 +8,39 @@
     align-items: center;
     height: 100%;
     position: relative;
+    animation:objectAnimation 1.3s .5s backwards;
 }
 .detail-background{
     height: 100%;
     width: 100%;
     z-index: -1;
     position: absolute;
+    animation:backgroundAnimation .8s;
+}
+
+@keyframes  backgroundAnimation{
+    0%{transform: translateX(-100vw);}
+    100%{transform: translateX(0vw);}
+}
+
+@keyframes objectAnimation{
+    0%{transform: translateX(-100vw);}
+    70%{transform: translateX(5px);}
+    100%{transform: translateX(0vw);}
 }
 .detail-box{
     width:450px;
     height:439px;
     background: white;
-    margin-top: 12vw;
     display: flex;
     justify-content: center;
 }
+.detail-box , .detail-container img{
+    margin-top: 15vw;
+}
+
 .detail-container img{
     width:250px;
-    margin-top: 12vw;
 }
 .inside-box{
     width:94%;
@@ -70,34 +86,49 @@
     text-decoration: none;
     font-weight: bolder;
     color:rgb(0, 0, 0);
+    overflow: visible;
 }
 .inside-box .navbar-right .navbar-item{
-    margin-top: 2vw;
+    margin-top: 50px;
     background: white;
     width: 150px;
     text-align: center;
+    z-index: 99;
 }
 
 .previousPage{
-    position: absolute;
-    margin-top: 25%;
+    position: fixed;
+    margin-top: 35%;
     left:25px;
-    height: 100px;
-    width: 100px;
-    border: 1px solid black;
+    height: 23px;
+    width: 50px;
     display: flex;
     justify-content: center;
     z-index: 999;
+    background: url("../ProductDetail/img_products/left_arrow.png");
+    background-size: cover;
+    background-position: center;
+    animation:objectAnimation 1.3s .5s backwards;
+    
 }
 
 .nextPage{
-    position: absolute;
-    margin-top: 25%;
+    position: fixed;
+    margin-top: 35%;
     right:25px;
-    height: 100px;
-    width: 100px;
-    border: 1px solid rgb(253, 0, 0);
+    height: 23px;
+    width: 50px;
     display: flex;
     justify-content: center;
     z-index: 999;
+    background: url("../ProductDetail/img_products/right_arrow.png");
+    background-size: cover;
+    background-position: center;
+    animation:objectAnimation 1.3s .5s backwards;
+}
+
+.previousPage:hover, .nextPage:hover{
+    transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    background-blend-mode:saturation;
+    transform: scale(1.2);
 }

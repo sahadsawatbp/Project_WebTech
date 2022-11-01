@@ -1,6 +1,6 @@
 
 .product-body{
-  min-height: 100vh;
+  height: 100%;
   width: 100%;
   margin:0;
   font-family: "Sofia Pro Black", Helvetica Neue, Helvetica, Arial, sans-serif ;
@@ -25,11 +25,11 @@
 .product-navbar .navbar a:hover{
   color:#6ca7df ;
 }
-.product-item p{
+.product-item .productName{
   color:black;
   font-size: .6vw;
   padding: 10px;
-  animation: transitionIn;
+  animation: transitionIn backwards .95s;
 }
 #tooltip{
   position: absolute;
@@ -89,7 +89,7 @@
   bottom: -30%;
   z-index: -1;
   transition: .5s;
-  animation: transitionIn;
+  animation: transitionIn backwards .75s;
 }
 @keyframes transitionIn{
   0%{opacity: 0;transform: translateY(40px);}
