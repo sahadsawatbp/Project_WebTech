@@ -7,6 +7,8 @@ const Product1 = () =>{
         <div className="detail-body">
             <div className="detail-background" style={{backgroundColor:Item[0].background_color}}></div>
             <div className="product-navbar"><Navbar /></div>
+            <Link className="previousPage" to="/purches">gg</Link>
+            <Link className="nextPage" to="/purches">gg</Link>
             <div className="detail-container">
                 <div className="detail-box">
                     <div className="inside-box">

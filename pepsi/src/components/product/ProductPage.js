@@ -10,7 +10,9 @@ const ProductPage = () =>{
               return <Product {...element} key={element.id}/>
             })}
           </div>
+          
       </div>
+      
   )
 }
 
