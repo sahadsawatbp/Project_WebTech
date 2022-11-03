@@ -7,7 +7,6 @@ import Product1 from './components/product/ProductDetail/Product1';
 import Product2 from './components/product/ProductDetail/Product2';
 function App() {
   return (
-      
         <Routes>
           <Route path="/" element={<Homepage/>}></Route>
           <Route path="/purches" element={<PurchesPage/>}></Route>
@@ -15,7 +14,6 @@ function App() {
           <Route path="/product/product_1" element={<Product1/>}></Route>
           <Route path="/product/product_2" element={<Product2/>}></Route>
         </Routes>
-      
   );
 }
 
