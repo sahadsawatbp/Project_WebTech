@@ -3,16 +3,14 @@ import Homepage from './components/HomePage/homePage';
 import React from 'react';
 import {Routes, Route} from "react-router-dom";
 import PurchesPage from './components/purchase/purchase';
-import Product1 from './components/product/ProductDetail/Product1';
-import Product2 from './components/product/ProductDetail/Product2';
+import ProductDetail from './components/product/ProductDetail/ProductDetail';
 function App() {
   return (
         <Routes>
           <Route path="/" element={<Homepage/>}></Route>
           <Route path="/purches" element={<PurchesPage/>}></Route>
           <Route path="/product" element={<ProductPage/>}></Route>
-          <Route path="/product/product_1" element={<Product1/>}></Route>
-          <Route path="/product/product_2" element={<Product2/>}></Route>
+          <Route path="/product/:page" element={<ProductDetail/>}></Route>
         </Routes>
   );
 }

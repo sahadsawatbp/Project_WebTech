@@ -59,14 +59,16 @@
     
 }
 
-.inside-box h1{
+.inside-box h2{
     font-weight: 900;
     border-bottom: 1px solid black;
     border-top: 1px solid black;
     border-left: 1px solid black;
     border-right: 1px solid black;
     padding:8px 20px;
+    white-space: break-spaces;
 }
+
 .inside-box h3{
     color:black;
     font-weight: 900;
